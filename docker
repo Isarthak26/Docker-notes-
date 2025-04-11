@@ -1,3 +1,41 @@
+🧱 Docker Image
+A Docker image is like a blueprint or template.
+
+It’s a read-only file that contains everything needed to run an application:
+
+Source code
+
+Dependencies
+
+Libraries
+
+Environment variables
+
+Config files
+
+You can think of it like a snapshot or a packaged app.
+
+Images are static and immutable.
+
+Built using a Dockerfile.
+
+Example:
+You might have an image for a Node.js app with Express and MongoDB pre-installed.
+
+📦 Docker Container
+A Docker container is a running instance of a Docker image.
+
+It’s the live, executable environment created from an image.
+
+Containers are ephemeral – they can be started, stopped, moved, and destroyed.
+
+It includes a writable layer on top of the read-only image.
+
+Example:
+When you run docker run node-app, Docker spins up a container from the node-app image. That container is what actually does the work.
+
+
+
 docker commands
 docker run hello-world
 docker images - shows all images present on your docker
