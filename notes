@@ -1,0 +1,12 @@
+docker commands
+docker run hello-world
+docker images - shows all images present on your docker
+docker pull ubuntu - or anything else like sql,mongo something which will pull the image of following
+docker run -it ubuntu - it means interactive
+docker run -d -p 8080:80 nginx this will run the image of nginx on port 8080 of (local port)
+(-d means detach mode and -p means port and 80 is the default port of nginx)
+docker logs container name - shows the logs of the following container
+if you want to save the image in which you have made changes so that it can be shared ,taking
+example of ubuntu
+you can create a commit message - docker commit -m "added names.txt file" b7c551f075a3 names_ubuntu:1.01- it will create a new image named names_ubuntu.
+docker rmi imgID - will remove or delete the image
