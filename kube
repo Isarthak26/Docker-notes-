@@ -1,0 +1,12 @@
+Kubernetes
+Commands:
+minkube start; (minikube is only used to start or stop the service)
+but in commands we only use kubectl
+kubectl get nodes;
+kubectl get status;
+kubectl get pods;(pods is the smallest unit of Kubernetes architecture)
+kubectl create deployment nginxdepl --image=nginx; (to create a pod of nginx)
+kubectl get deployment;
+kubectl get replicaset; (replicaset is managing the replicas of pods)
+kubectl edit deployment nginx-depl (edit the config file of image ex: changing version of nginx etc)
+kubectl exec -it nginx-depl-54bd6589c-99hbb -- bin/bash (to enter the terminal of image ex nginx or ubuntu for debugging purposes)
